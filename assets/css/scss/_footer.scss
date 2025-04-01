@@ -1,0 +1,14 @@
+@use "../utils/vars" as *;
+
+.footer {
+  background-color: $bg-default-color;
+  box-sizing: border-box;
+
+  &__paragraph {
+    padding: 30px 0;
+    text-align: center;
+    color: $tertiary-dark-text-color;
+    font-weight: 400;
+    font-size: 18px;
+  }
+}

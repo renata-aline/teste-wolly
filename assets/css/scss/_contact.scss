@@ -1,0 +1,157 @@
+@use "../utils/vars" as *;
+
+.contact {
+  background-color: $tertiary-color;
+
+  &__description {
+    box-sizing: border-box;
+    display: flex;
+    gap: 90px;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+
+    &_information {
+      width: 100%;
+      max-width: 495px;
+
+      @media screen and (max-width: 768px) {
+        max-width: 400px;
+      }
+
+      &-title {
+        color: $secondary-text-color;
+        font-size: 46px;
+        font-weight: 400;
+        line-height: 54px;
+
+        @media screen and (max-width: 1024px) {
+          font-size: 36px;
+          line-height: 42px;
+        }
+
+        @media screen and (max-width: 375px) {
+          font-size: 28px;
+          line-height: 32px;
+        }
+
+        &--span {
+          display: block;
+          color: $tertiary-dark-text-color;
+          font-weight: bold;
+        }
+      }
+
+      &-image {
+        display: block;
+        margin-top: 38px;
+        margin-left: -185px;
+
+        @media screen and (max-width: 1024px) {
+          margin-left: 0;
+          margin-top: 20px;
+        }
+
+        @media screen and (max-width: 375px) {
+          margin-left: -76px;
+        }
+
+        &--photo {
+          width: 100%;
+        }
+      }
+    }
+
+    &_form {
+      background-color: $bg-default-color;
+      width: 100%;
+      border-radius: 30px;
+      padding: 68px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+
+      @media screen and (max-width: 1024px) {
+        padding: 24px;
+      }
+
+      @media screen and (max-width: 768px) {
+        width: 90%;
+        padding: 40px;
+        border-radius: 20px;
+      }
+
+      &-label {
+        color: $tertiary-light-text-color;
+        display: block;
+        text-transform: uppercase;
+        margin-top: 8px;
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      &-input {
+        height: 56px;
+        width: 100%;
+        border-radius: 10px;
+        border: 1px solid $tertiary-light-text-color;
+        outline: none;
+        font-size: 24px;
+        box-sizing: border-box;
+      }
+
+      &-warning {
+        color: $text-warning-color;
+        font-size: 18px;
+        font-weight: 400;
+      }
+
+      &-button {
+        width: 100%;
+        min-height: 86px;
+        max-width: 654px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 38px;
+        gap: 10px;
+        box-sizing: border-box;
+        background-color: $secondary-color;
+        border-radius: 18px;
+        border: 4px solid $tertiary-dark-text-color;
+        color: $text-light-color;
+        padding: 30px 0;
+        text-align: center;
+        cursor: pointer;
+
+        font-size: 24px;
+
+        &:hover {
+          opacity: 0.8;
+        }
+
+        @media screen and (max-width: 768px) {
+          padding: 20px 0;
+          font-size: 20px;
+          min-height: 70px;
+        }
+
+        @media screen and (max-width: 375px) {
+          border: 2px solid $tertiary-dark-text-color;
+        }
+
+        .fa-arrow-right:before {
+          font-size: 30px;
+          color: $primary-color;
+
+          @media screen and (max-width: 768px) {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

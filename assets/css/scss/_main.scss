@@ -1,0 +1,30 @@
+@use "../utils/vars" as *;
+
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  max-width: 1568px;
+  margin: 0 auto;
+}
+
+.content {
+  max-width: 1186px;
+  box-sizing: border-box;
+  padding: 108px 58px;
+  margin: 0 auto;
+
+  &--header {
+    padding: 0;
+  }
+
+  &--warning {
+    padding: 0;
+  }
+}
+
+.success {
+  color: $text-success-color;
+  font-size: 18px;
+  font-weight: 400;
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Woolly" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>Teste Woolly Front-end Jr.</title>
+
+    <link rel="icon" type="image/png" href="" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="content content--header">
+          <div class="header__banner">
+            <img
+              src="assets/images/logo.png"
+              alt="Logo"
+              class="header__banner_logo"
+            />
+            <div class="header__banner_description">
+              <h1 class="header__banner_description-title">
+                Lorem ipsum dolor sit ament, consectetur adipiscing elit
+              </h1>
+              <span class="header__banner_description-text"
+                >*ut risus ante, ultrices nec eros in</span
+              >
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="about">
+          <div class="content content">
+            <div class="about__description">
+              <div class="about__description_image">
+                <img
+                  src="assets/images/house.png"
+                  alt="Imagem de uma casa"
+                  class="about__description_image-photo"
+                />
+              </div>
+              <div class="about__description_text">
+                <p class="about__description_text-paragraph">
+                  Cras send <strong>neque ultrices</strong>,tincidunt lacus sit
+                  amet, aliquet libero.Pellentesque malesuada
+                  <strong>neque vel nisl</strong> aliquet, aget sacudales ipsun
+                  iaculis.Curabitur afficitur purus send turpis placerat, sit
+                  amet pretium nunc vehicula. Nulla facilisi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="marketing">
+          <div class="content">
+            <div class="marketing__description">
+              <div class="marketing__description_information">
+                <h3 class="marketing__description_information-title">
+                  vestibulum fringilia, odio at commodo aliquet, diam enim
+                  hendrerit diam
+                </h3>
+                <p class="marketing__description_information-paragraph">
+                  Suspendisse suscript turpis nisi:
+                </p>
+                <p class="marketing__description_information-contact">
+                  <i class="fa-solid fa-phone"></i>
+                  <a
+                    href="tel:11999990000"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="marketing__description_information-contact--link"
+                    >11<strong>99999-0000</strong></a
+                  >
+                </p>
+              </div>
+              <div class="marketing__description_video">
+                <iframe
+                  class="marketing__description_video--iframe"
+                  width="100%"
+                  height="508px"
+                  src="https://www.youtube.com/embed/1c9AmeSMpUk?si=8V1UewnOIK5NQWEG"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+
+              <a href="#contact" class="marketing__description_link">
+                <i class="fa-solid fa-arrow-right"></i>
+                Fale conosco
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="warning">
+          <div class="content content--warning">
+            <div class="warning__description">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <p class="warning__description_paragraph">
+                In eu tortor dictum, susciptun vel, pretium lectus.Duis commodo
+                nunc purus, nec accumumsan sen sollictidum vitae nulla et sem
+                velit.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact" id="contact">
+          <div class="content content--contact">
+            <div class="contact__description">
+              <div class="contact__description_information">
+                <h3 class="contact__description_information-title">
+                  Phasellus viverra mi et enim <strong>gravida</strong> mattis
+                  turpis
+                  <span class="contact__description_information-title--span"
+                    >suspenndisse auctor mass lacus.</span
+                  >
+                </h3>
+                <div class="contact__description_information-image">
+                  <img
+                    src="assets/images/notebook.png"
+                    alt="imagem notebook"
+                    class="contact__description_information-image--photo"
+                  />
+                </div>
+              </div>
+
+              <form class="contact__description_form" id="contactForm">
+                <label for="name" class="contact__description_form-label"
+                  >Nome Completo*</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  class="contact__description_form-input"
+                />
+
+                <label for="cnpj" class="contact__description_form-label"
+                  >CNPJ*</label
+                >
+                <input
+                  type="text"
+                  id="cnpj"
+                  name="cnpj"
+                  required
+                  class="contact__description_form-input"
+                />
+
+                <label for="email" class="contact__description_form-label"
+                  >E-mail*</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="contact__description_form-input"
+                />
+
+                <label for="phone" class="contact__description_form-label"
+                  >Telefone*</label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  required
+                  class="contact__description_form-input"
+                />
+
+                <label for="enterprise" class="contact__description_form-label"
+                  >Empresa*</label
+                >
+                <input
+                  type="text"
+                  id="enterprise"
+                  name="enterprise"
+                  required
+                  class="contact__description_form-input"
+                />
+
+                <p
+                  class="contact__description_form-warning"
+                  id="formWarning"
+                ></p>
+
+                <button type="submit" class="contact__description_form-button">
+                  <i class="fa-solid fa-arrow-right"></i>
+                  Entre em contato
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <p class="footer__paragraph">&copy; 2025 - Teste Woolly</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-masker/1.2.0/vanilla-masker.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
