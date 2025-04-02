@@ -9,9 +9,7 @@ Este projeto foi criado para testar minhas habilidades como desenvolvedora front
 - [Sobre](#sobre)
 - [Tecnologias](#tecnologias)
 - [Instalação](#instalação)
-- [Uso](#uso)
-- [Contribuição](#contribuição)
-- [Licença](#licença)
+
 
 ## Sobre
 Este projeto foi criado para testar minhas habilidades como desenvolvedora front-end. Ele inclui o uso de tecnologias modernas para estilização e desenvolvimento web.
